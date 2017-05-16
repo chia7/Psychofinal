@@ -1,0 +1,25 @@
+.page {
+	text-align: center;
+}
+
+.test_trail {
+	display: none;
+}
+
+.real_trail {
+	display: none;
+}
+
+.description {
+	display: none;
+}
+
+.exp {
+	display: none;
+}
+
+#end {
+	display: none;
+}
+
+
