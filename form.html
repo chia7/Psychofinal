@@ -6,8 +6,33 @@
 </head>
 <body>
 	<div class='page'>
+	
 		<p>This is a form.</p>
-		<a>click <a href="exp.html">here</a> to start the experiment</a>
+
+		<form name="basicInfo" action="exp.html">
+			<p>所屬學院：</p>
+			<select name="Dept">
+				<option value="Lib">文學院</option>
+				<option value="Sci">理學院</option>
+				<option value="Law">社科院 / 法學院</option>
+				<option value="Med">醫學院 / 公衛學院</option>
+				<option value="Eng">工學院 / 電資院</option>
+				<option value="Bio">生農學院 / 生科院</option>
+				<option value="Man">管理學院</option>
+			</select>
+			<p>性別：</p>
+			<select name="Sex">
+				<option value="Male">男性</option>
+				<option value="Female">女性</option>
+				<option value="Other">其他</option>
+			</select>
+			<p>年齡：</p>
+			<input type="number" name="Age">
+			<br/>
+			<input type="submit" name="submitButton" value="Submit">
+		</form>
+
+		<!-- <a>click <a href="exp.html">here</a> to start the experiment</a> -->
 	</div>
 </body>
 </html>
