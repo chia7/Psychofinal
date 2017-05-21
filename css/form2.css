@@ -4,10 +4,9 @@
           box-sizing: border-box;
 }
 
-.page {
+form {
 	position: absolute;
-	height: 400px;
-	width: 300px;
-	top: calc(50% - 200px);
-	left: calc(50% - 150px);
+	width: 880px;
+	left: calc(50% - 440px);
+	margin-top: 70px;
 }
