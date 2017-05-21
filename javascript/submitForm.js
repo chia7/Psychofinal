@@ -38,14 +38,14 @@ function sendData() {
 	str += 'entry.' + AgeID + '=' + basicInfo.AGE + '&';
 
 	var timeForm = JSON.parse(window.localStorage.getItem('timeForm'));
-	str += 'entry.' + Q1ID + '=' + basicInfo.Q1 + '&';
-	str += 'entry.' + Q2ID + '=' + basicInfo.Q2 + '&';
-	str += 'entry.' + Q3ID + '=' + basicInfo.Q3 + '&';
-	str += 'entry.' + Q4ID + '=' + basicInfo.Q4 + '&';
-	str += 'entry.' + Q5ID + '=' + basicInfo.Q5 + '&';
-	str += 'entry.' + Q6ID + '=' + basicInfo.Q6 + '&';
-	str += 'entry.' + Q7ID + '=' + basicInfo.Q7 + '&';
-	str += 'entry.' + Q8ID + '=' + basicInfo.Q8 + '&';
+	str += 'entry.' + Q1ID + '=' + timeForm.Q1 + '&';
+	str += 'entry.' + Q2ID + '=' + timeForm.Q2 + '&';
+	str += 'entry.' + Q3ID + '=' + timeForm.Q3 + '&';
+	str += 'entry.' + Q4ID + '=' + timeForm.Q4 + '&';
+	str += 'entry.' + Q5ID + '=' + timeForm.Q5 + '&';
+	str += 'entry.' + Q6ID + '=' + timeForm.Q6 + '&';
+	str += 'entry.' + Q7ID + '=' + timeForm.Q7 + '&';
+	str += 'entry.' + Q8ID + '=' + timeForm.Q8 + '&';
 
 	str += 'submit=Submit';
 	$.getScript(str);
