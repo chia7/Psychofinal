@@ -14,7 +14,7 @@
 
 		<form name="basicInfo" action="exp.html">
 			<p>所屬學院：</p>
-			<select name="Dept">
+			<select id="Dept">
 				<option value="Lib">文學院</option>
 				<option value="Sci">理學院</option>
 				<option value="Law">社科院 / 法學院</option>
@@ -24,18 +24,29 @@
 				<option value="Man">管理學院</option>
 			</select>
 			<p>性別：</p>
-			<select name="Sex">
+			<select id="Sex">
 				<option value="Male">男性</option>
 				<option value="Female">女性</option>
 				<option value="Other">其他</option>
 			</select>
 			<p>年齡：</p>
-			<input type="number" name="Age">
+			<input type="number" id="Age">
 			<br/>
-			<input type="submit" name="submitButton" value="Submit">
+			<input type="submit" id="submitButton" value="Submit">
 		</form>
 
-		<!-- <a>click <a href="exp.html">here</a> to start the experiment</a> -->
+		<script type="text/javascript">
+			$('#submitButton').click( 
+				function() {
+					window.localStorage.setItem('basicInfo', JSON.stringify({
+						DEPT: $('#Dept').find(":selected").val(),
+						SEX: $('#Sex').find(":selected").val(),
+						AGE: +$('#Age').val()
+					}));
+				}
+			);
+		</script>
+
 	</div>
 </body>
 </html>
