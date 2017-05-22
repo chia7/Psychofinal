@@ -10,7 +10,8 @@
 <body>
 	<div class='page'>
 
-		<form name="basicInfo" action="exp.html">
+		<!-- <form name="basicInfo" action="exp.html"> -->
+		<form name="timeForm">
 			<p>1. 平常與人有約時，你<strong>通常</strong>會何時到約定的地點？</p>
 				<input type="radio" name="q1" value="+0"> 提早0~10分鐘  
 				<input type="radio" name="q1" value="+10"> 提早10~20分鐘  
@@ -64,6 +65,24 @@
 			<br>
 			<input type="submit" id="submitButton" value="Submit">
 		</form>
+
+		<script type="text/javascript">
+			$('#submitButton').click( 
+				function() {
+					window.localStorage.setItem('timeForm', JSON.stringify({
+						Q1: $('input[name=q1]:checked').val(),
+						Q2: $('input[name=q2]:checked').val(),
+						Q3: $('input[name=q3]:checked').val(),
+						Q4: $('input[name=q4]:checked').val(),
+						Q5: $('input[name=q5]:checked').val(),
+						Q6: $('input[name=q6]:checked').val(),
+						Q7: $('input[name=q7]:checked').val(),
+						Q8: $('input[name=q8]:checked').val()
+					}));
+					sendData();
+				}
+			);
+		</script>
 
 	</div>
 </body>
