@@ -56,10 +56,33 @@ p strong {
 }
 
 .testing {
-	margin-top: 10%;
+	margin-top: 20%;
+}
+
+#dspt-1 {
+	position: absolute;
+	width: 600px;
+	height: 200px;
+	top: calc(50% - 100px);
+	left: calc(50% - 300px);
+	padding: 20px;
+	border: solid black 1px;
+	background-color:rgba(255,255,255,0.4);
 }
 
 #end {
 	display: none;
+	position: absolute;
+	width: 600px;
+	height: 200px;
+	top: calc(50% - 100px);
+	left: calc(50% - 300px);
+	padding: 20px;
+	border: solid black 1px;
+	background-color:rgba(255,255,255,0.4);
+}
+
+#continue {
+	margin-left: calc(50% - 20px);
 }
 

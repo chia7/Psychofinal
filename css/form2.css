@@ -4,18 +4,25 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-    font-family: 'Noto Sans TC', sans-serif;
-	font-weight: 300;
+}
+
+p strong {
+	font-weight: 500;
 }
 
 form {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 300;
 	position: absolute;
-	width: 810px;
-	left: calc(50% - 405px);
-	margin-top: 30px;
+	width: 80%;
+	top: calc(50% - 350px);
+	left: 10%;
+	padding: 20px;
+	border: solid black 1px;
+	background-color:rgba(255,255,255,0.4);
 }
 
-#submitButton {
+/*#submitButton {
 	position: absolute;
 	right: 0%;
 	background: #3498db;
@@ -42,4 +49,4 @@ form {
 	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
 	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
 	text-decoration: none;
-}
+}*/
