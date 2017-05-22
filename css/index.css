@@ -4,8 +4,6 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-    font-family: 'Noto Sans TC', sans-serif;
-	font-weight: 300;
 }
 
 body {
@@ -13,6 +11,8 @@ body {
 	padding: 0;
 	background: url('../img/wallpaper2.png') center center fixed no-repeat;
 	background-size: cover;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 300;
 }  
 
 .page {
@@ -20,11 +20,10 @@ body {
 }
 
 h2 {
-	font-weight: 500px;
+	font-weight: 400;
 }
 
 .description {
-	//font-weight: 400;
 	width: 600px;
 	margin: 200px auto;
 	padding: 20px;
@@ -35,4 +34,8 @@ h2 {
 #dsp2 {
 	margin: 250px auto;
 	display: none;
+}
+
+#auth {
+	font-weight: 100;
 }
