@@ -2,15 +2,27 @@
 	text-align: center;
 }
 
-.test_trail {
+#dspt-2 {
 	display: none;
 }
 
-.real_trail {
+#tt-button {
 	display: none;
 }
 
-.description {
+#rt1-button {
+	display: none;
+}
+
+#rt2-button {
+	display: none;
+}
+
+#rt3-button {
+	display: none;
+}
+
+#rt4-button {
 	display: none;
 }
 
@@ -21,5 +33,4 @@
 #end {
 	display: none;
 }
-
 
