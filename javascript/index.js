@@ -9,8 +9,10 @@ function gen() {
 	var exp_order = new Array(1,2,3,4);
 	shuffle(exp_order)
 	var exp_current = 0;
+	var exp_time = new Array();
 	localStorage.setItem( 'exp_order', JSON.stringify(exp_order) );
 	localStorage.setItem( 'exp_current', JSON.stringify(exp_current) );
+	localStorage.setItem( 'exp_time', JSON.stringify(exp_time) );
 	console.log( JSON.parse( localStorage.getItem( 'exp_order' ) ) );
 	console.log( JSON.parse( localStorage.getItem( 'exp_current' ) ) );
 }
