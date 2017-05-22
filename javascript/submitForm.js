@@ -15,6 +15,7 @@ db : https://docs.google.com/spreadsheets/d/1RimxKNCGFYG3gjyBwaHMuE-rNwBnS2rYxjK
 const DeptID = '386904180';
 const SexID = '2027773850';
 const AgeID = '1133005454';
+const HomeID = '996498367'; 
 
 const Q1ID = '767003490';
 const Q2ID = '112017352';
@@ -25,6 +26,18 @@ const Q6ID = '939123948';
 const Q7ID = '279819614';
 const Q8ID = '260195463';
 
+const a3ID = '864037047';
+const a5ID = '280835022';
+const a7ID = '567786117';
+const b3ID = '1286933508';
+const b5ID = '237705035';
+const b7ID = '579174930';
+const c3ID = '1559916288';
+const c5ID = '969230478';
+const c7ID = '1433396649';
+const d3ID = '101290332';
+const d5ID = '816873280';
+const d7ID = '717943784';
 
 // get basicInfo from localStorage
 function sendData() {
@@ -35,6 +48,7 @@ function sendData() {
 	str += 'entry.' + DeptID + '=' + basicInfo.DEPT + '&';
 	str += 'entry.' + SexID + '=' + basicInfo.SEX + '&';
 	str += 'entry.' + AgeID + '=' + basicInfo.AGE + '&';
+	str += 'entry.' + HomeID + '=' + basicInfo.HOME + '&';
 
 	var timeForm = JSON.parse(window.localStorage.getItem('timeForm'));
 	str += 'entry.' + Q1ID + '=' + timeForm.Q1 + '&';
@@ -45,6 +59,20 @@ function sendData() {
 	str += 'entry.' + Q6ID + '=' + timeForm.Q6 + '&';
 	str += 'entry.' + Q7ID + '=' + timeForm.Q7 + '&';
 	str += 'entry.' + Q8ID + '=' + timeForm.Q8 + '&';
+
+	var exp_time = JSON.parse(window.localStorage.getItem('exp_time'));
+	str += 'entry.' + a3ID + '=' + exp_time[0][2] + '&';
+	str += 'entry.' + a5ID + '=' + exp_time[1][2] + '&';
+	str += 'entry.' + a7ID + '=' + exp_time[2][2] + '&';
+	str += 'entry.' + b3ID + '=' + exp_time[3][2] + '&';
+	str += 'entry.' + b5ID + '=' + exp_time[4][2] + '&';
+	str += 'entry.' + b7ID + '=' + exp_time[5][2] + '&';
+	str += 'entry.' + c3ID + '=' + exp_time[6][2] + '&';
+	str += 'entry.' + c5ID + '=' + exp_time[7][2] + '&';
+	str += 'entry.' + c7ID + '=' + exp_time[8][2] + '&';
+	str += 'entry.' + d3ID + '=' + exp_time[9][2] + '&';
+	str += 'entry.' + d5ID + '=' + exp_time[10][2] + '&';
+	str += 'entry.' + d7ID + '=' + exp_time[11][2] + '&';
 
 	str += 'submit=Submit';
 	$.getScript(str);
