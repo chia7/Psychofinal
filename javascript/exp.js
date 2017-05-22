@@ -1,7 +1,8 @@
 // use for selecting the order of experiment 
-var exp_order = JSON.parse( localStorage.getItem( 'exp_order' ) );
-var exp_current = JSON.parse( localStorage.getItem( 'exp_current' ) );
-var exp_time = JSON.parse( localStorage.getItem( 'exp_time' ) );
+var exp_order = new Array(1,2,3,4);
+var exp_current = 0
+var exp_time = new Array();
+shuffle(exp_order)
 
 
 var sec = [3, 5, 7];
@@ -63,11 +64,6 @@ function again() {
 
 // use for changing the exp to show 
 function next_exp() {
-	if(exp_current == 1) {
-		exp_current++;
-		save();
-		location.href='form2.html';
-	}
 	if(exp_current == 3) {
 		exp_time.sort(cmp);
 		console.log( exp_time )
@@ -78,12 +74,6 @@ function next_exp() {
 	exp_current++;
 	document.getElementById('exp' + exp_order[exp_current]).style.display = 'block';
 	trial = 0;
-};
-
-
-function save() {
-	localStorage.setItem( 'exp_current', JSON.stringify(exp_current) );
-	localStorage.setItem( 'exp_time', JSON.stringify(exp_time) );
 };
 
 
