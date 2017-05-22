@@ -1,9 +1,41 @@
-.page {
-	text-align: center;
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+	background: url('../img/wallpaper2.png') center center fixed no-repeat;
+	background-size: cover;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 300;
+}  
+
+.page {
+	text-align: justify;
+}
+
+h2 {
+	font-weight: 400;
+}
+
+.description {
+	width: 600px;
+	margin: 200px auto;
+	padding: 20px;
+	border: solid black 1px;
+	background-color:rgba(255,255,255,0.4);
+}
 
 #dsp2 {
+	margin: 250px auto;
 	display: none;
-	text-align: left;
+}
+
+#auth {
+	font-weight: 100;
 }
