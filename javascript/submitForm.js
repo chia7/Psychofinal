@@ -16,16 +16,15 @@ const DeptID = '386904180';
 const SexID = '2027773850';
 const AgeID = '1133005454';
 
-const Q1ID = '';
-const Q2ID = '';
-const Q3ID = '';
-const Q4ID = '';
-const Q5ID = '';
-const Q6ID = '';
-const Q7ID = '';
-const Q8ID = '';
+const Q1ID = '767003490';
+const Q2ID = '112017352';
+const Q3ID = '651064029';
+const Q4ID = '332924839';
+const Q5ID = '1036651474';
+const Q6ID = '939123948';
+const Q7ID = '279819614';
+const Q8ID = '260195463';
 
-const 
 
 // get basicInfo from localStorage
 function sendData() {
@@ -49,4 +48,5 @@ function sendData() {
 
 	str += 'submit=Submit';
 	$.getScript(str);
+
 }
