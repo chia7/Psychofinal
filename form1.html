@@ -10,17 +10,6 @@
 	<div class='page'>
 	
 		<form name="basicInfo" action="exp.html">
-			所屬學院：
-			<select id="Dept" required>
-				<option value="Lib">文學院</option>
-				<option value="Sci">理學院</option>
-				<option value="Law">社科院 / 法學院</option>
-				<option value="Med">醫學院 / 公衛學院</option>
-				<option value="Eng">工學院 / 電資院</option>
-				<option value="Bio">生農學院 / 生科院</option>
-				<option value="Man">管理學院</option>
-			</select>
-			<br/><br/>
 			性別：
 			<select id="Sex" required>
 				<option value="Male">男性</option>
@@ -29,7 +18,7 @@
 			</select>
 			<br/><br/>
 			年齡：
-			<input type="number" id="Age" required>
+			<input type="number" id="Age" min="5" max="100" required>
 			<br/><br/>
 			家鄉：
 			<select id="Home" required>
@@ -41,6 +30,28 @@
 				<option value="Other">其他</option>
 			</select>
 			<br/><br/>
+			所屬學院：
+			<select id="Dept" required>
+				<option value="Lib">文學院</option>
+				<option value="Sci">理學院</option>
+				<option value="Law">社科院 / 法學院</option>
+				<option value="Med">醫學院 / 公衛學院</option>
+				<option value="Eng">工學院 / 電資院</option>
+				<option value="Bio">生農學院 / 生科院</option>
+				<option value="Man">管理學院</option>
+			</select>
+			<br/><br/>
+			前一學期的GPA：
+			<select id="GPA" required>
+				<option value="1">0~1.99</option>
+				<option value="2">2.0~2.99</option>
+				<option value="3">3.0~3.99</option>
+				<option value="4">4.0~4.3</option>
+			</select>
+			<br/><br/>
+			FB名 (抽獎用，可選填)：
+			<input type="text" id="FB" value="">
+			<br/><br/>
 			<input type="submit" id="submitButton" value="Submit">
 		</form>
 
@@ -51,7 +62,9 @@
 						DEPT: $('#Dept').find(":selected").val(),
 						SEX: $('#Sex').find(":selected").val(),
 						AGE: +$('#Age').val(),
-						HOME: $('#Home').find(":selected").val()
+						HOME: $('#Home').find(":selected").val(),
+						GPA: $('#GPA').find(":selected").val(),
+						FB: $('#Fb').val()
 					}));
 				}
 			);
