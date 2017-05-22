@@ -11,7 +11,7 @@
 	
 		<form name="basicInfo" action="exp.html">
 			所屬學院：
-			<select id="Dept">
+			<select id="Dept" required>
 				<option value="Lib">文學院</option>
 				<option value="Sci">理學院</option>
 				<option value="Law">社科院 / 法學院</option>
@@ -22,17 +22,17 @@
 			</select>
 			<br/><br/>
 			性別：
-			<select id="Sex">
+			<select id="Sex" required>
 				<option value="Male">男性</option>
 				<option value="Female">女性</option>
 				<option value="Other">其他</option>
 			</select>
 			<br/><br/>
 			年齡：
-			<input type="number" id="Age">
+			<input type="number" id="Age" required>
 			<br/><br/>
 			家鄉：
-			<select id="Home">
+			<select id="Home" required>
 				<option value="North">北部地區</option>
 				<option value="Middle">中部地區</option>
 				<option value="South">南部地區</option>
