@@ -60,9 +60,11 @@ p strong {
 }
 
 #dspt-1 {
+	position: absolute;
 	width: 600px;
 	height: 200px;
-	margin: 250px auto;
+	top: calc(50% - 100px);
+	left: calc(50% - 300px);
 	padding: 20px;
 	border: solid black 1px;
 	background-color:rgba(255,255,255,0.4);
@@ -70,9 +72,11 @@ p strong {
 
 #end {
 	display: none;
+	position: absolute;
 	width: 600px;
 	height: 200px;
-	margin: 250px auto;
+	top: calc(50% - 100px);
+	left: calc(50% - 300px);
 	padding: 20px;
 	border: solid black 1px;
 	background-color:rgba(255,255,255,0.4);
