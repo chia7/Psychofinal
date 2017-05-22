@@ -7,50 +7,49 @@
 <body>
 	<div class="page">
 
+		<div class="testing" id="test">
+			<img src="https://images3.alphacoders.com/829/thumb-1920-829355.png" height=360px width=600px>
+
+			<div class='description' id="dspt-1">
+				<p>
+					你將會有 2 次的練習機會。每次開始前請先以滑鼠點擊「start」的按鈕，接著便可以按住「空白鍵」以產生指定的時間長度。時間的計算為：從按下空白鍵起到放開這中間的時間長度。若你準備好即可點擊以下「繼續」的按鈕。
+				</p>
+				<button type="button" onclick="test();">繼續</button>
+			</div>
+
+			<div class='description' id='dspt-2'>
+				<p>
+					開始前請先以滑鼠點擊「start」的按鈕，接著便可以按住「空白鍵」以產生指定的時間長度。
+				</p>
+				<div class='test_trail' id='tt'></div>
+				<div class='test_trail' id='tt-ans'></div>
+				<div class='test_trail' id='tt-again'>
+					<button type="button" onclick="again_test();">start</button>
+				</div>
+				<div class='test_trail' id='tt-button'>
+					<button type="button" onclick="next_test();">開始正式測驗</button>
+				</div>
+			</div>
+			
+		</div>
+
 		<div class="exp" id="exp1">
 			
 			<img src="http://pre14.deviantart.net/3344/th/pre/f/2014/112/0/9/misaka_mikoto_wallpaper_by_mythicxgamer-d7fktjj.png" height=360px width=600px>
 
-			<!-- this part is the description of the experiment -->
-			<div class='description' id='dsp1-1'>
-				<p>You can try 3 times. </p>
-				<p>blah blah blah blah ...
-					<button type="button" onclick="next_dsp();">Next</button>
-				</p>
-			</div>
-
-			<!-- this part is the warm-up trail -->
-			<div class='description' id='dsp1-2'>
-				<p>Press Space to produce the following time.</p>
-				<div class='test_trail' id='tt1'></div>
-				<div class='test_trail' id='tt1-ans'></div>
-				<div class='test_trail' id='tt1-again'>
-					<button type="button" onclick="again_2();">try again</button>
-				</div>
-				<div class='test_trail' id='tt1-button'>
-					<h4>Start real trail!</h4>
-					<button type="button" onclick="next_dsp();">Start</button>
-				</div>
-			</div>
-
 			<!-- this part is the real trail -->
-			<div class='description' id='dsp1-3'>
-				<p>Press Space to produce the following time.</p>
+			<div class='description' id='dsp1'>
+				<p>
+					開始前請先以滑鼠點擊「start」的按鈕，接著便可以按住「空白鍵」以產生指定的時間長度。
+				</p>
 				<div class='real_trail' id='rt1'></div>
 				<div class='real_trail' id='rt1-ans'></div>
 				<div class='real_trail' id='rt1-again'>
-					<button type="button" onclick="again_3();">next trail</button>
+					<button type="button" onclick="again();">start</button>
 				</div>
 				<div class='real_trail' id='rt1-button'>
-					<button type="button" onclick="next_dsp();">Next</button>
+					<button type="button" onclick="next_exp();">Next</button>
 				</div>
-			</div>
-
-			<!-- this part goes to the next experiment -->
-			<div class='description' id='dsp1-4'>
-				<h3>Next trail
-					<button type="button" onclick="next_exp();">Continue</button>
-				</h3>
 			</div>
 
 		</div>
@@ -59,46 +58,19 @@
 			
 			<img src="https://images8.alphacoders.com/813/thumb-1920-813362.jpg" height=360px width=600px>
 
-			<!-- this part is the description of the experiment -->
-			<div class='description' id='dsp2-1'>
-				<p>You can try 3 times. </p>
-				<p>blah blah blah blah ...
-					<button type="button" onclick="next_dsp();">Next</button>
-				</p>
-			</div>
-
-			<!-- this part is the warm-up trail -->
-			<div class='description' id='dsp2-2'>
-				<p>Press Space to produce the following time.</p>
-				<div class='test_trail' id='tt2'></div>
-				<div class='test_trail' id='tt2-ans'></div>
-				<div class='test_trail' id='tt2-again'>
-					<button type="button" onclick="again_2();">try again</button>
-				</div>
-				<div class='test_trail' id='tt2-button'>
-					<h4>Start real trail!</h4>
-					<button type="button" onclick="next_dsp();">Start</button>
-				</div>
-			</div>
-
 			<!-- this part is the real trail -->
-			<div class='description' id='dsp2-3'>
-				<p>Press Space to produce the following time.</p>
+			<div class='description' id='dsp2'>
+				<p>
+					開始前請先以滑鼠點擊「start」的按鈕，接著便可以按住「空白鍵」以產生指定的時間長度。
+				</p>
 				<div class='real_trail' id='rt2'></div>
 				<div class='real_trail' id='rt2-ans'></div>
 				<div class='real_trail' id='rt2-again'>
-					<button type="button" onclick="again_3();">next trail</button>
+					<button type="button" onclick="again();">start</button>
 				</div>
 				<div class='real_trail' id='rt2-button'>
-					<button type="button" onclick="next_dsp();">Next</button>
+					<button type="button" onclick="next_exp();">Next</button>
 				</div>
-			</div>
-
-			<!-- this part goes to the next experiment -->
-			<div class='description' id='dsp2-4'>
-				<h3>Next trail
-					<button type="button" onclick="next_exp();">Continue</button>
-				</h3>
 			</div>
 
 		</div>
@@ -107,46 +79,19 @@
 			
 			<img src="http://img14.deviantart.net/09eb/i/2016/122/2/7/misaka_mikoto_wallpaper_by_fiskkarn132-d9za5pp.jpg" height=360px width=600px>
 
-			<!-- this part is the description of the experiment -->
-			<div class='description' id='dsp3-1'>
-				<p>You can try 3 times. </p>
-				<p>blah blah blah blah ...
-					<button type="button" onclick="next_dsp();">Next</button>
-				</p>
-			</div>
-
-			<!-- this part is the warm-up trail -->
-			<div class='description' id='dsp3-2'>
-				<p>Press Space to produce the following time.</p>
-				<div class='test_trail' id='tt3'></div>
-				<div class='test_trail' id='tt3-ans'></div>
-				<div class='test_trail' id='tt3-again'>
-					<button type="button" onclick="again_2();">try again</button>
-				</div>
-				<div class='test_trail' id='tt3-button'>
-					<h4>Start real trail!</h4>
-					<button type="button" onclick="next_dsp();">Start</button>
-				</div>
-			</div>
-
 			<!-- this part is the real trail -->
-			<div class='description' id='dsp3-3'>
-				<p>Press Space to produce the following time.</p>
+			<div class='description' id='dsp3'>
+				<p>
+					開始前請先以滑鼠點擊「start」的按鈕，接著便可以按住「空白鍵」以產生指定的時間長度。
+				</p>
 				<div class='real_trail' id='rt3'></div>
 				<div class='real_trail' id='rt3-ans'></div>
 				<div class='real_trail' id='rt3-again'>
-					<button type="button" onclick="again_3();">next trail</button>
+					<button type="button" onclick="again();">start</button>
 				</div>
 				<div class='real_trail' id='rt3-button'>
-					<button type="button" onclick="next_dsp();">Next</button>
+					<button type="button" onclick="next_exp();">Next</button>
 				</div>
-			</div>
-
-			<!-- this part goes to the next experiment -->
-			<div class='description' id='dsp3-4'>
-				<h3>Next trail
-					<button type="button" onclick="next_exp();">Continue</button>
-				</h3>
 			</div>
 
 		</div>
@@ -155,46 +100,19 @@
 			
 			<img src="https://images6.alphacoders.com/639/thumb-1920-639712.jpg" height=360px width=600px>
 
-			<!-- this part is the description of the experiment -->
-			<div class='description' id='dsp4-1'>
-				<p>You can try 3 times. </p>
-				<p>blah blah blah blah ...
-					<button type="button" onclick="next_dsp();">Next</button>
-				</p>
-			</div>
-
-			<!-- this part is the warm-up trail -->
-			<div class='description' id='dsp4-2'>
-				<p>Press Space to produce the following time.</p>
-				<div class='test_trail' id='tt4'></div>
-				<div class='test_trail' id='tt4-ans'></div>
-				<div class='test_trail' id='tt4-again'>
-					<button type="button" onclick="again_2();">try again</button>
-				</div>
-				<div class='test_trail' id='tt4-button'>
-					<h4>Start real trail!</h4>
-					<button type="button" onclick="next_dsp();">Start</button>
-				</div>
-			</div>
-
 			<!-- this part is the real trail -->
-			<div class='description' id='dsp4-3'>
-				<p>Press Space to produce the following time.</p>
+			<div class='description' id='dsp4'>
+				<p>
+					開始前請先以滑鼠點擊「start」的按鈕，接著便可以按住「空白鍵」以產生指定的時間長度。
+				</p>
 				<div class='real_trail' id='rt4'></div>
 				<div class='real_trail' id='rt4-ans'></div>
 				<div class='real_trail' id='rt4-again'>
-					<button type="button" onclick="again_3();">next trail</button>
+					<button type="button" onclick="again();">start</button>
 				</div>
 				<div class='real_trail' id='rt4-button'>
-					<button type="button" onclick="next_dsp();">Next</button>
+					<button type="button" onclick="next_exp();">Next</button>
 				</div>
-			</div>
-
-			<!-- this part goes to the next experiment -->
-			<div class='description' id='dsp4-4'>
-				<h3>Next trail
-					<button type="button" onclick="next_exp();">Continue</button>
-				</h3>
 			</div>
 
 		</div>
