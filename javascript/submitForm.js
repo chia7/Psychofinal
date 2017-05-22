@@ -15,6 +15,7 @@ db : https://docs.google.com/spreadsheets/d/1RimxKNCGFYG3gjyBwaHMuE-rNwBnS2rYxjK
 const DeptID = '386904180';
 const SexID = '2027773850';
 const AgeID = '1133005454';
+const HomeID = '996498367'; 
 
 const Q1ID = '767003490';
 const Q2ID = '112017352';
@@ -35,6 +36,7 @@ function sendData() {
 	str += 'entry.' + DeptID + '=' + basicInfo.DEPT + '&';
 	str += 'entry.' + SexID + '=' + basicInfo.SEX + '&';
 	str += 'entry.' + AgeID + '=' + basicInfo.AGE + '&';
+	str += 'entry.' + HomeID + '=' + basicInfo.HOME + '&';
 
 	var timeForm = JSON.parse(window.localStorage.getItem('timeForm'));
 	str += 'entry.' + Q1ID + '=' + timeForm.Q1 + '&';

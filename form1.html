@@ -10,10 +10,8 @@
 <body>
 	<div class='page'>
 	
-		<p>This is a form.</p>
-
 		<form name="basicInfo" action="exp.html">
-			<p>所屬學院：</p>
+			所屬學院：
 			<select id="Dept">
 				<option value="Lib">文學院</option>
 				<option value="Sci">理學院</option>
@@ -23,15 +21,27 @@
 				<option value="Bio">生農學院 / 生科院</option>
 				<option value="Man">管理學院</option>
 			</select>
-			<p>性別：</p>
+			<br/><br/>
+			性別：
 			<select id="Sex">
 				<option value="Male">男性</option>
 				<option value="Female">女性</option>
 				<option value="Other">其他</option>
 			</select>
-			<p>年齡：</p>
+			<br/><br/>
+			年齡：
 			<input type="number" id="Age">
-			<br/>
+			<br/><br/>
+			家鄉：
+			<select id="Home">
+				<option value="North">北部地區</option>
+				<option value="Middle">中部地區</option>
+				<option value="South">南部地區</option>
+				<option value="East">東部地區</option>
+				<option value="Island">離島地區</option>
+				<option value="Other">其他</option>
+			</select>
+			<br/><br/>
 			<input type="submit" id="submitButton" value="Submit">
 		</form>
 
@@ -41,7 +51,8 @@
 					window.localStorage.setItem('basicInfo', JSON.stringify({
 						DEPT: $('#Dept').find(":selected").val(),
 						SEX: $('#Sex').find(":selected").val(),
-						AGE: +$('#Age').val()
+						AGE: +$('#Age').val(),
+						HOME: $('#Home').find(":selected").val()
 					}));
 				}
 			);
