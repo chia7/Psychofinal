@@ -4,12 +4,26 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-    font-family: 'Noto Sans TC', sans-serif;
-	font-weight: 300;
+    
+}
+
+p strong {
+	font-weight: 500;
 }
 
 .page {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 300;
 	text-align: center;
+}
+
+.description {
+	width: 680px;
+	margin: auto;
+}
+
+#dspt-1 {
+	text-align: justify;
 }
 
 #dspt-2 {
@@ -38,6 +52,11 @@
 
 .exp {
 	display: none;
+	margin-top: 10%;
+}
+
+.testing {
+	margin-top: 10%;
 }
 
 #end {
