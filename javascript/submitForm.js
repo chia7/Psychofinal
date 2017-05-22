@@ -60,7 +60,7 @@ function sendData() {
 	str += 'entry.' + Q7ID + '=' + timeForm.Q7 + '&';
 	str += 'entry.' + Q8ID + '=' + timeForm.Q8 + '&';
 
-	var exp_time = JSON.parse(window.localStorage.getItem('exp_time'));
+	//var exp_time = JSON.parse(window.localStorage.getItem('exp_time'));
 	str += 'entry.' + a3ID + '=' + exp_time[0][2] + '&';
 	str += 'entry.' + a5ID + '=' + exp_time[1][2] + '&';
 	str += 'entry.' + a7ID + '=' + exp_time[2][2] + '&';

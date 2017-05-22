@@ -90,6 +90,7 @@ function save() {
 function finish() {
 	document.getElementById('exp' + exp_order[exp_current]).style.display = 'none';
 	document.getElementById('end').style.display = 'block';
+	sendData();
 	localStorage.clear();
 };
 
