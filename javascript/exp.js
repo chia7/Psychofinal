@@ -107,18 +107,28 @@ function cmp(a, b) {
 var pressed = {};
 window.onkeydown = function(e) {
 
-	if(count < 2 && !set) {
-		if(e.keyCode == 32) {	// press Space
+	if(count < 2) {
+		if(e.keyCode == 32 && !set) {	// press Space
 			if ( pressed[e.which] )	return;
 			pressed[e.which] = e.timeStamp;
+		}
+		if(e.keyCode == 13 && set) {
+			if ( pressed[e.which] )	return;
+			pressed[e.which] = e.timeStamp;
+			again_test();
 		}
 		return;
 	}
 
-	if(trial < 3 && !set) {
-		if(e.keyCode == 32) {	// press Space
+	if(trial < 3) {
+		if(e.keyCode == 32 && !set) {	// press Space
 			if ( pressed[e.which] )	return;
 			pressed[e.which] = e.timeStamp;
+		}
+		if(e.keyCode == 13 && set) {
+			if ( pressed[e.which] )	return;
+			pressed[e.which] = e.timeStamp;
+			again();
 		}
 		return;
 	}
@@ -133,6 +143,7 @@ window.onkeyup = function(e) {
 			var s = document.getElementById("tt-ans")
 			s.innerHTML = '<p>你按了 ' + duration + ' 秒鐘. </p>';
 			pressed[e.which] = 0;
+			pressed[13] = 0;
 			set = 1;
 			count++;	
 			if(count == 2) {
@@ -154,6 +165,7 @@ window.onkeyup = function(e) {
 			exp_time.push([ exp_order[exp_current], sec[trial], duration ])
 
 			pressed[e.which] = 0;
+			pressed[13] = 0;
 			set = 1;
 			trial++;		
 			if(trial == 3) {
