@@ -25,17 +25,25 @@ h2 {
 
 .description {
 	width: 600px;
-	margin: 200px auto;
+	height: 340px;
+	position: absolute;
+	left: calc(50% - 300px);
+	top: calc(50% - 170px);
 	padding: 20px;
 	border: solid black 1px;
-	background-color:rgba(255,255,255,0.4);
+	background-color:rgba(255,255,255,0.85);
 }
 
 #dsp2 {
-	margin: 250px auto;
+	width: 600px;
+	height: 230px;
+	position: absolute;
+	left: calc(50% - 300px);
+	top: calc(50% - 115px);
 	display: none;
 }
 
 #auth {
 	font-weight: 100;
+	text-align: right;
 }
