@@ -23,6 +23,10 @@ h2 {
 	font-weight: 400;
 }
 
+p strong {
+	font-weight: 500;
+}
+
 .description {
 	width: 600px;
 	height: 340px;
